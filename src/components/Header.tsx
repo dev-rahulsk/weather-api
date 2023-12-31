@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Header = ({onSearchChange}: any) => {
+const Header = ({ onSearchChange }: any) => {
   const [inputValue, setInputValue] = useState("")
   const [search, setSearch] = useState(inputValue);
 
@@ -10,16 +10,19 @@ const Header = ({onSearchChange}: any) => {
 
   const handleKeyDown = (e: any) => {
     if (e.key === 'Enter') {
-    onSearchChange(search);
+      onSearchChange(search);
     }
   }
-  
+
   const handleClick = () => {
     onSearchChange(search);
   }
-  
+
   useEffect(() => {
     setSearch(inputValue)
+    if (inputValue === "") {
+      onSearchChange(inputValue);
+    }
   }, [inputValue])
 
   return (

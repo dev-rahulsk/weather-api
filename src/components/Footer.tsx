@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <nav className="navbar fixed-bottom">
         <div className="container-fluid justify-content-center">
-          <span className="navbar-text text-white">
+          <span className="navbar-text text-white text-center">
             Made with ❤️ by Rahul Singh Khichi
           </span>
         </div>
