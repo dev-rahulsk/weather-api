@@ -22,8 +22,8 @@ const Body = () => {
   }, [city, coords])
 
 
-  async function API() {
-    await axios.get(`${baseURL}?lat=${coords.lat}&lon=${coords.lon}&appid=${key}&units=metric&q=${city}`)
+  function API() {
+    axios.get(`${baseURL}?lat=${coords.lat}&lon=${coords.lon}&appid=${key}&units=metric&q=${city}`)
       .then((res) => {
         setData(res.data);
         setErrorMsg("")
@@ -46,7 +46,7 @@ const Body = () => {
 
   function showPosition(pos: any) {
     console.log(pos);
-    
+
     const obj = {
       lat: pos.coords.latitude,
       lon: pos.coords.longitude
