@@ -8,8 +8,8 @@ const Header = ({ onSearchChange }: any) => {
     setInputValue(e.target.value);
   }
 
-  const handleKeyDown = (e: any) => {
-    if (e.key === 'Enter') {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {    
+    if (e.key === "Enter") {
       onSearchChange(search);
     }
   }
