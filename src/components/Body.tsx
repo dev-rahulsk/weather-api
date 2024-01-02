@@ -45,8 +45,6 @@ const Body = () => {
   }
 
   function showPosition(pos: any) {
-    console.log(pos);
-
     const obj = {
       lat: pos.coords.latitude,
       lon: pos.coords.longitude
