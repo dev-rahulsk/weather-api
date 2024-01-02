@@ -12,7 +12,7 @@ const Body = () => {
 
   const baseURL = "https://api.openweathermap.org/data/2.5/weather";
   const key = "67cce3ca7ea02e2e91ee41eb4e6bf7f5";
-  const handleOnSearchChange = (searchData: "") => {
+  const handleOnSearchChange = (searchData: string) => {
     setCity(searchData);
   }
 
@@ -43,6 +43,7 @@ const Body = () => {
         }, 1000);
       })
   }
+
 
   function showPosition(pos: any) {
     const obj = {
