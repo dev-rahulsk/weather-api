@@ -26,8 +26,8 @@ h1 {
 }
 
 .container {
-  min-height: 400px;
-  max-width: 700px;
+  min-height: 70vh;
+  max-width: 45rem;
   height: 70vh;
   margin: auto;
   padding: 0 1rem;
@@ -38,7 +38,7 @@ h1 {
 
 .desc {
   position: relative;
-  top: 50px;
+  top: 3rem;
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(270deg);
@@ -61,7 +61,7 @@ h1 {
 }
 
 .loader {
-  min-height: 400px;
+  min-height: 70vh;
   height: 70vh;
   display: flex;
   justify-content: center;
